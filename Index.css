@@ -1,0 +1,59 @@
+body {
+    --color-primary: white;
+    --color-secoundary: ;
+    --color-Primary-dark: ;
+    --color-secoundary-dark: ;
+    --error-error: ;
+}
+
+body#container {
+    position: relative;
+    background-color: var(--color-primary);
+    background-repeat: no-repeat;
+    background-image: url(Bilder/Van\ Gogh-Homepage.jpg);
+    background-position: center;
+    height: 768px;
+}
+
+div#Text__remove {
+    line-height: 77%;
+    letter-spacing: -15px;
+    word-spacing: -40px;
+    font-family: 'righteous', 'sans-serif';
+    height: 768px;
+    width: 1024px;
+    background-color: white;
+    margin: 0 auto;
+    color: black;
+    font-size: 18rem;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: screen;
+    transition: background-color 1.25s ease-out 100ms;
+}
+
+div#Text__remove:hover {
+    background-color: black;
+}
+
+input.scroll__down {
+    background-image: url(Bilder/pngwing.com.png);
+    text-align: center;
+    width: 40px;
+    height: 50px;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: black;
+    position: absolute;
+    margin: 0 auto;
+    left: 50%;
+    top: 72%;
+    right: 50%;
+    bottom: 50%;
+    color: white;
+    transition: ease-in;
+}
