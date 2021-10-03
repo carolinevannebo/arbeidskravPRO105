@@ -18,7 +18,7 @@ header{
 }
 
 .landing-set{
-    background: #c7eaf0;
+    background: white;
     /*top: 0;*/
 }
 
@@ -69,7 +69,7 @@ section{
     margin: 0;
     height: 100vh;
     width: 100vw;
-    background-color: #c0bfa5bb;
+    background-color: white;
 }
 
 nav{
