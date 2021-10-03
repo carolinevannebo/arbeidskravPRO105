@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+#landing{
+    background-image: url(media/blossom.jpeg);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*position: fixed;*/
+}
+
+#slider{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Khula', sans-serif;
+    font-size: 5rem;
+    font-weight: bolder;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.815);
+    animation: fadeOut ease 5s;
+    position: fixed;
+}
+
+#landing-text{
+    background: url(media/blossom.jpeg);
+    height: 100vh;
+    width: 100vw;
+    padding-top: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-clip: unset;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    display: block;
+}
+
+@keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+}
+
+#button{
+    height: 50px;
+    fill: rgba(0, 0, 0, 0.815);
+    /*denne må flyttes ned*/
+}
+
+header{
+    height: 100vh;
+    width: 100vw;
+}
