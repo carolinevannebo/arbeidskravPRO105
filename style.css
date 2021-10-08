@@ -12,7 +12,7 @@ header{
     text-transform: uppercase;
     justify-content: center;
     background-color: whitesmoke;
-    color: rgb(59,84,86);
+    color: rgb(30,39,79);
     padding-top: 20px;   
 }
 
@@ -45,17 +45,17 @@ nav li{
 
 nav li a{
     text-decoration: none;
-    color: rgb(59,84,86);
+    color: rgb(30,39,79);
     padding: 5px;
     transition: 00.25s ease-in-out;
     font-family: 'Playfair Display', serif;
 }
 
 nav li a:hover{
-    background-color: #337175be;
-    padding: 5px;
+    color: whitesmoke;
+    border: 1px solid rgb(30,39,79);
     border-radius: 5px;
-    color: white;
+    background-color: rgb(30,39,79);
 }
 
 /*Main*/
@@ -75,21 +75,11 @@ main{
     padding: 10px;
 }
 
-#section-container2{
-    position: relative;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 10px;
-}
-
 
 h2{
     font-size: 35px;
     padding: 20px;
-    color: rgb(59,84,86);
+    color: rgb(30,39,79);
     font-family: 'Playfair Display SC', serif;
 }
 
@@ -98,22 +88,25 @@ p{
     padding: 20px;
     font-family: 'Playfair Display', serif;
     line-height: 1.6;
-    color: rgb(59,84,86);
-    column-count: 2;
+    color: rgb(30,39,79);
+    
 }
 
-#text-box1, #text-box2{
+#text-box1{
     margin: 100px;
     background-color: whitesmoke;
-    border: thick double rgb(59,84,86);
+    border: thick double rgb(30,39,79);
     padding: 40px;
+    column-count: 3;
+    flex-direction: row-reverse;
     border-radius: 5px;
 }
 
-#text-box2{
-
+#portrett-gif{
+    border-radius: 5px;
 }
 
+/*Animasjoner*/
 #fade-in{
     position: relative;
 }
