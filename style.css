@@ -59,15 +59,30 @@ nav li a:hover{
 }
 
 /*Main*/
-#section-container{
+body{
+    background-color: whitesmoke;
+}
+main{
+    position: relative;
+}
+#section-container1{
+    position: absolute;
+    top: 900px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url(images/trær.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding: 30px;
+    padding: 10px;
+}
+
+#section-container2{
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
 }
 
 
@@ -87,11 +102,16 @@ p{
     column-count: 2;
 }
 
-#white-box{
+#text-box1, #text-box2{
     margin: 100px;
     background-color: whitesmoke;
-    border: 1px solid rgb(59,84,86);
+    border: thick double rgb(59,84,86);
     padding: 40px;
+    border-radius: 5px;
+}
+
+#text-box2{
+
 }
 
 #fade-in{
