@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    font-family: 'Khula', sans-serif;
 }
 
 /*Header*/
@@ -11,11 +10,10 @@ header{
     display: flex;
     font-size: 2rem;
     text-transform: uppercase;
-    color:rgb(59,84,86);
     justify-content: center;
-    background-color: rgb(59,84,86);
-    color: white;
-    padding-top: 20px;
+    background-color: whitesmoke;
+    color: rgb(59,84,86);
+    padding-top: 20px;   
 }
 
 /*Navigation*/
@@ -24,7 +22,7 @@ nav{
     justify-content: center;
     align-items: center;
     color: white;
-    background-color: rgb(59,84,86);
+    background-color:whitesmoke;
 }
 
 nav{
@@ -47,9 +45,10 @@ nav li{
 
 nav li a{
     text-decoration: none;
-    color: white;
+    color: rgb(59,84,86);
     padding: 5px;
     transition: 00.25s ease-in-out;
+    font-family: 'Playfair Display', serif;
 }
 
 nav li a:hover{
@@ -59,6 +58,7 @@ nav li a:hover{
     color: white;
 }
 
+/*Main*/
 #section-container{
     display: flex;
     justify-content: center;
@@ -74,7 +74,7 @@ nav li a:hover{
 h2{
     font-size: 35px;
     padding: 20px;
-    color: white;
+    color: rgb(59,84,86);
     font-family: 'Playfair Display SC', serif;
 }
 
@@ -83,14 +83,63 @@ p{
     padding: 20px;
     font-family: 'Playfair Display', serif;
     line-height: 1.6;
-    color: white;
+    color: rgb(59,84,86);
+    column-count: 2;
 }
 
 #white-box{
     margin: 100px;
-    background-color: rgb(59,84,86);
-    padding: 20px 40px 40px 20px;
-    border-radius: 20px;
+    background-color: whitesmoke;
+    border: 1px solid rgb(59,84,86);
+    padding: 40px;
+}
+
+#fade-in{
+    position: relative;
+}
+
+#fade-in img{
+    position: absolute;
+    animation-name: fade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 15s;
+    }
+    :nth-of-type(1){
+        animation-delay: 15s;
+    }
+    :nth-of-type(2){
+        animation-delay: 10s;
+    }
+    :nth-of-type(3){
+        animation-delay: 5s;
+    }
+    
+
+@keyframes fade{
+    0%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 0;
+    }
+    50%{ 
+        opacity: 0;
+    }
+    80%{ 
+        opacity: 0;
+    }
+    100%{ 
+        opacity: 1;
+    }
     
 }
+
+.tre, .cafe, .original{
+    height: 100vh;
+    width: 100vw;
+
+}
+
 
