@@ -99,11 +99,11 @@ p{
     padding: 40px;
     column-count: 3;
     flex-direction: row-reverse;
-    border-radius: 5px;
+
 }
 
-#portrett-gif{
-    border-radius: 5px;
+.info-box{
+    background-color: rgb(233, 232, 232);
 }
 
 /*Animasjoner*/
