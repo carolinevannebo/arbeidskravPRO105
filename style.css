@@ -21,7 +21,7 @@ div.container {
     position: relative;
     background-color: var(--color-primary);
     background-repeat: no-repeat;
-    background-image: url(Bilder/vincent-1920x1080-main.jpg);
+    background-image: url(media/blossom.jpeg);
     background-position: center;
     background-size: cover;
     max-width: 1920px;
