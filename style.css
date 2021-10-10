@@ -102,8 +102,27 @@ p{
 
 }
 
+#text-box2{
+    background-color: wheat;
+    padding: 40px;
+    column-count: 3;
+    flex-direction: row-reverse;
+
+}
+
+
 .info-box{
     background-color: rgb(233, 232, 232);
+}
+
+#textogbilde{
+    background-color: wheat;
+    border: 2px solid salmon;
+    width: 30%;
+    height: auto;
+    margin: 30px 20px;
+    align-content: center;
+
 }
 
 /*Animasjoner*/
