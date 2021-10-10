@@ -92,6 +92,7 @@ p{
     
 }
 
+
 #text-box1{
     margin: 100px;
     background-color: whitesmoke;
@@ -102,28 +103,62 @@ p{
 
 }
 
-
-#text-box2{
+#text-box2, #text-box3{
+    margin: 20px;
+    background-color: whitesmoke;
     padding: 40px;
     column-count: 3;
     flex-direction: row-reverse;
 
 }
 
+#hatt-img{
+    width: 400px;
+    height: 300px;
+}
 
-.info-box{
+
+.info-box1{
     background-color: rgb(233, 232, 232);
 }
 
-#textogbilde{
-    background-color: wheat;
-    border: 2px solid salmon;
+.info-box2{
+    background-color: rgb(233, 232, 232);
+    width: 400px;
+}
+
+.funfact1{
+    background-color: rgb(233, 232, 232);
+    border: 5px solid rgb(233, 232, 232);
     width: 30%;
     height: auto;
     margin: 30px 20px;
-    align-content: center;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    min-width: 280px;
+}
+
+#box-img{
+    width: 100%;
+    height: auto;
+}
+
+#box-h{
+    padding: 2px 10px;
 
 }
+
+#box-p{
+    padding: 2px 10px;
+
+}
+
+#funfact-container{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+}
+
 
 /*Animasjoner*/
 #fade-in{
