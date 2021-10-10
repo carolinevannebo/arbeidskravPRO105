@@ -102,8 +102,17 @@ p{
 
 }
 
+#text-box p:hover{
+    margin: 100px;
+    background-color: rgb(30,39,79);
+    border: thick double whitesmoke;
+    padding: 40px;
+    column-count: 3;
+    flex-direction: row-reverse;
+
+}
+
 #text-box2{
-    background-color: wheat;
     padding: 40px;
     column-count: 3;
     flex-direction: row-reverse;
