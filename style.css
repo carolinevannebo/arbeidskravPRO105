@@ -5,7 +5,7 @@
     font-family: 'Khula', sans-serif;
 }
 
-header{
+.home{
     height: 200vh;
 }
 
@@ -64,57 +64,168 @@ header{
 .landing-image .slider h1{
     color: white;
 }
-
+/*
 section{
     margin: 0;
     height: 100vh;
     width: 100vw;
     background-color: white;
 }
-
-nav{
-    height: 20vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+*/
+.intro-page{
     position: sticky;
-    background-color: #9aa18759;
-    color: white;
+    z-index: 2;
 }
-nav h1{
+.intro-page, main{
+    box-sizing: border-box;
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+.second-header{
+    display: flex;
     font-size: 2rem;
     text-transform: uppercase;
-    color: #337175be;
+    justify-content: center;
+    background-color: whitesmoke;
+    color: rgb(30,39,79);
+    padding-top: 20px; 
 }
 
-.menu{
-    list-style: none;
-    width: 25vw;
+nav{
     display: flex;
     justify-content: center;
-    padding: 0;
-}
-.menu li{
-    display: inline-block;
-    padding: 0 30px 0 30px;
-    justify-content: space-between;
-}
-.menu li a{
-    text-decoration: none;
-    color: #337175be;
-    padding: 5px;
-    transition: 0.25s ease-in-out;
-}
-
-.menu li a:hover{
-    background-color: #337175be;
-    padding: 5px;
-    border-radius: 5px;
+    align-items: center;
     color: white;
+    background-color:whitesmoke;
+}
+nav{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+}
+nav ul{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+nav li{
+    display: inline;
+}
+nav li a{
+    text-decoration: none;
+    color: rgb(30,39,79);
+    padding: 5px;
+    transition: 00.25s ease-in-out;
+    font-family: 'Playfair Display', serif;
+}
+nav li a:hover{
+    color: whitesmoke;
+    border: 1px solid rgb(30,39,79);
+    border-radius: 5px;
+    background-color: rgb(30,39,79);
 }
 
+main{
+    position: relative;
+}
+
+.section-container1{
+    position: absolute;
+    top: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.intro-page h2, p{
+    font-size: 35px;
+    padding: 20px;
+    color: rgb(30,39,79);
+    font-family: 'Playfair Display SC', serif;
+    font-size: 20px;
+    padding: 20px;
+    font-family: 'Playfair Display', serif;
+    line-height: 1.6;
+    color: rgb(30,39,79);
+}
+
+.text-box1{
+    margin: 100px;
+    background-color: whitesmoke;
+    border: thick double rgb(30,39,79);
+    padding: 40px;
+    column-count: 3;
+    flex-direction: row-reverse;
+}
+.text-box2{
+    padding: 40px;
+    column-count: 3;
+    flex-direction: row-reverse;
+}
+
+.info-box{
+    background-color: rgb(233, 232, 232);
+}
+
+.textogbilde{
+    background-color: wheat;
+    border: 2px solid salmon;
+    width: 30%;
+    height: auto;
+    margin: 30px 20px;
+    align-content: center;
+}
+
+.fade-in{
+    position: relative;
+}
+
+.fade-in img{
+    position: absolute;
+    animation-name: fade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 15s;
+    }
+    :nth-of-type(1){
+        animation-delay: 15s;
+    }
+    :nth-of-type(2){
+        animation-delay: 10s;
+    }
+    :nth-of-type(3){
+        animation-delay: 5s;
+    }
+    
+
+@keyframes fade{
+    0%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 0;
+    }
+    50%{ 
+        opacity: 0;
+    }
+    80%{ 
+        opacity: 0;
+    }
+    100%{ 
+        opacity: 1;
+    }
+}
+
+.tre, .cafe, .original{
+    height: 100vh;
+    width: 100vw;
+
+}
 /*
 
 .landing{
