@@ -18,25 +18,23 @@ header{
 
 /*Navigation*/
 nav{
-    display: flex;
-    justify-content: center;
     align-items: center;
     color: white;
     background-color:whitesmoke;
-    text-decoration: none;
 }
 
 nav ul{
-    display: flex;
-    text-decoration: none;
-    justify-content: center;
     margin-bottom: 20px;
-    
+}
+
+nav, nav ul{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
 }
 
 nav li{
     display: inline;
-    
 }
 
 nav li a{
@@ -66,14 +64,12 @@ nav li a:hover{
 /*Main*/
 body{
     background-color: whitesmoke;
-    width: 1024px;
-    height: 768px;
 }
+
 main{
     position: relative;
-    
-    
 }
+
 #section-container1{
     position: absolute;
     top: 900px;
@@ -82,44 +78,39 @@ main{
     align-items: center;
     flex-direction: column;
     padding: 10px;
-    
 }
-
 
 h2{
     font-size: 35px;
-    padding: 20px;
-    color: rgb(30,39,79);
     font-family: 'Playfair Display SC', serif;
 }
 
 p{
     font-size: 20px;
-    padding: 20px;
     font-family: 'Playfair Display', serif;
     line-height: 1.6;
+}
+
+h2, p{
+    padding: 20px;
     color: rgb(30,39,79);
-    
 }
 
 
 #text-box1{
     margin: 100px;
-    background-color: whitesmoke;
     border: thick double rgb(30,39,79);
-    padding: 40px;
-    column-count: 3;
-    flex-direction: row-reverse;
-
 }
 
 #text-box2, #text-box3{
     margin: 40px;
+}
+
+#text-box1, #text-box2, #text-box3{
     background-color: whitesmoke;
     padding: 40px;
     column-count: 3;
     flex-direction: row-reverse;
-
 }
 
 #hatt-img{
@@ -128,12 +119,11 @@ p{
 }
 
 
-.info-box1{
+.info-box1, .info-box2{
     background-color: rgb(233, 232, 232);
 }
 
 .info-box2{
-    background-color: rgb(233, 232, 232);
     width: 400px;
 }
 
@@ -156,12 +146,10 @@ p{
 
 #box-h{
     padding: 10px 10px;
-
 }
 
 #box-p{
     padding: 5px 10px;
-
 }
 
 #funfact-container{
