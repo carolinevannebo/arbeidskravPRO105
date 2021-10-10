@@ -1,46 +1,112 @@
 /*Her startet du*/
-*{
+
+* {
     margin: 0;
     scroll-behavior: smooth;
     font-family: 'Khula', sans-serif;
 }
 
-.home{
-    height: 200vh;
+body {
+    --color-primary: white;
+    --color-secoundary: ;
+    --color-Primary-dark: ;
+    --color-secoundary-dark: ;
+    --error-error: ;
 }
 
-.landing{
+div.container {
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: var(--color-primary);
+    background-repeat: no-repeat;
+    background-image: url(Bilder/vincent-1920x1080-main.jpg);
+    background-position: center;
+    background-size: cover;
+    max-width: 1920px;
+    max-height: 1080px;
     height: 100vh;
-    width: 100%;
-    clip:rect(0, auto, auto, 0);
-    position: absolute;
-    overflow: hidden;
+    width: 100vw;
 }
 
-.landing-set{
+div.Text__remove {
+    z-index: 2;
+    font-weight: bold;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-color: white;
+    color: black;
+    text-align: center;
+    position: absolute;
+    mix-blend-mode: screen;
+    transition: background-color 1.25s ease-out 100ms;
+}
+
+div.Text__remove h1 {
+    z-index: 2;
+    line-height: 74%;
+    padding-top: 6%;
+    font-family: 'Khula', 'sans-serif';
+    font-size: 300px;
+    letter-spacing: -10px;
+    position: absolute;
+    max-height: 100vh;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+div.Text__remove:hover {
+    background-color: black;
+}
+
+.scroll__down {
+    z-index: 2;
+    margin-top: 90vh;
+    margin-left: 50%;
+    margin-right: 50%;
+    background-image: url(Bilder/bilde.svg);
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+    border: none;
+    position: absolute;
+    color: white;
+    transition: ease-in;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.landing-set {
     background: white;
     /*top: 0;*/
 }
 
-.slider{
+.slider {
     display: block;
     position: fixed;
     margin: auto;
     width: 100%;
     top: 50%;
     -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
-.slider h1{
+.slider h1 {
     font-size: 5rem;
     font-weight: bolder;
     text-align: center;
     text-transform: uppercase;
 }
 
-.landing-set .slider h1{
+.landing-set .slider h1 {
     background: url(media/blossom.jpeg);
     background-size: 100vw auto;
     background-repeat: no-repeat;
@@ -52,7 +118,7 @@
     color: black;
 }
 
-.landing-image{
+.landing-image {
     background-image: url(media/blossom.jpeg);
     background-size: 100vw auto;
     /*background-repeat: no-repeat;*/
@@ -61,9 +127,11 @@
     top: 100vh;
 }
 
-.landing-image .slider h1{
+.landing-image .slider h1 {
     color: white;
 }
+
+
 /*
 section{
     margin: 0;
@@ -72,66 +140,74 @@ section{
     background-color: white;
 }
 */
-.intro-page{
+
+.intro-page {
     position: sticky;
     z-index: 2;
 }
-.intro-page, main{
+
+.intro-page,
+main {
     box-sizing: border-box;
     padding: 0;
     background-color: whitesmoke;
 }
 
-.second-header{
+.second-header {
     display: flex;
     font-size: 2rem;
     text-transform: uppercase;
     justify-content: center;
     background-color: whitesmoke;
-    color: rgb(30,39,79);
-    padding-top: 20px; 
+    color: rgb(30, 39, 79);
+    padding-top: 20px;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    background-color:whitesmoke;
+    background-color: whitesmoke;
 }
-nav{
+
+nav {
     display: flex;
     text-decoration: none;
     justify-content: center;
 }
-nav ul{
+
+nav ul {
     display: flex;
     text-decoration: none;
     justify-content: center;
     margin-bottom: 20px;
 }
-nav li{
+
+nav li {
     display: inline;
 }
-nav li a{
+
+nav li a {
     text-decoration: none;
-    color: rgb(30,39,79);
+    color: rgb(30, 39, 79);
     padding: 5px;
     transition: 00.25s ease-in-out;
     font-family: 'Playfair Display', serif;
 }
-nav li a:hover{
+
+nav li a:hover {
     color: whitesmoke;
-    border: 1px solid rgb(30,39,79);
+    border: 1px solid rgb(30, 39, 79);
     border-radius: 5px;
-    background-color: rgb(30,39,79);
+    background-color: rgb(30, 39, 79);
 }
 
-main{
+main {
     position: relative;
 }
 
-.section-container1{
+.section-container1 {
     position: absolute;
     top: 900px;
     display: flex;
@@ -141,37 +217,39 @@ main{
     padding: 10px;
 }
 
-.intro-page h2, p{
+.intro-page h2,
+p {
     font-size: 35px;
     padding: 20px;
-    color: rgb(30,39,79);
+    color: rgb(30, 39, 79);
     font-family: 'Playfair Display SC', serif;
     font-size: 20px;
     padding: 20px;
     font-family: 'Playfair Display', serif;
     line-height: 1.6;
-    color: rgb(30,39,79);
+    color: rgb(30, 39, 79);
 }
 
-.text-box1{
+.text-box1 {
     margin: 100px;
     background-color: whitesmoke;
-    border: thick double rgb(30,39,79);
-    padding: 40px;
-    column-count: 3;
-    flex-direction: row-reverse;
-}
-.text-box2{
+    border: thick double rgb(30, 39, 79);
     padding: 40px;
     column-count: 3;
     flex-direction: row-reverse;
 }
 
-.info-box{
+.text-box2 {
+    padding: 40px;
+    column-count: 3;
+    flex-direction: row-reverse;
+}
+
+.info-box {
     background-color: rgb(233, 232, 232);
 }
 
-.textogbilde{
+.textogbilde {
     background-color: wheat;
     border: 2px solid salmon;
     width: 30%;
@@ -180,52 +258,57 @@ main{
     align-content: center;
 }
 
-.fade-in{
+.fade-in {
     position: relative;
 }
 
-.fade-in img{
+.fade-in img {
     position: absolute;
     animation-name: fade;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-duration: 15s;
-    }
-    :nth-of-type(1){
-        animation-delay: 15s;
-    }
-    :nth-of-type(2){
-        animation-delay: 10s;
-    }
-    :nth-of-type(3){
-        animation-delay: 5s;
-    }
-    
+}
 
-@keyframes fade{
-    0%{
+ :nth-of-type(1) {
+    animation-delay: 15s;
+}
+
+ :nth-of-type(2) {
+    animation-delay: 10s;
+}
+
+ :nth-of-type(3) {
+    animation-delay: 5s;
+}
+
+@keyframes fade {
+    0% {
         opacity: 1;
     }
-    20%{
+    20% {
         opacity: 0;
     }
-    50%{ 
+    50% {
         opacity: 0;
     }
-    80%{ 
+    80% {
         opacity: 0;
     }
-    100%{ 
+    100% {
         opacity: 1;
     }
 }
 
-.tre, .cafe, .original{
+.tre,
+.cafe,
+.original {
     height: 100vh;
     width: 100vw;
-
 }
+
+
 /*
 
 .landing{
