@@ -1,17 +1,26 @@
 /*Her startet du*/
 
-* {
-    margin: 0;
-    scroll-behavior: smooth;
-    font-family: 'Khula', sans-serif;
+div.child {
+    height: 100vh;
+    overflow: auto;
 }
 
 body {
+    overflow: hidden;
     --color-primary: white;
     --color-secoundary: ;
     --color-Primary-dark: ;
     --color-secoundary-dark: ;
     --error-error: ;
+}
+
+
+/*div parent and child for scroll effect*/
+
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: 'Khula', sans-serif;
 }
 
 div.container {
@@ -68,7 +77,7 @@ div.Text__remove:hover {
     margin-top: 90vh;
     margin-left: 50%;
     margin-right: 50%;
-    background-image: url(Bilder/bilde.svg);
+    background-image: url(media/Arrow.svg);
     text-align: center;
     height: 30px;
     width: 30px;
