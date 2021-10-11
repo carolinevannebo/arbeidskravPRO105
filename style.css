@@ -92,65 +92,7 @@ div.Text__remove:hover {
     right: 0;
 }
 
-.landing-set {
-    background: white;
-    /*top: 0;*/
-}
-
-.slider {
-    display: block;
-    position: fixed;
-    margin: auto;
-    width: 100%;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
-.slider h1 {
-    font-size: 5rem;
-    font-weight: bolder;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.landing-set .slider h1 {
-    background: url(media/blossom.jpeg);
-    background-size: 100vw auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    color: black;
-}
-
-.landing-image {
-    background-image: url(media/blossom.jpeg);
-    background-size: 100vw auto;
-    /*background-repeat: no-repeat;*/
-    background-position: center;
-    background-attachment: fixed;
-    top: 100vh;
-}
-
-.landing-image .slider h1 {
-    color: white;
-}
-
-
-/*
-section{
-    margin: 0;
-    height: 100vh;
-    width: 100vw;
-    background-color: white;
-}
-*/
-
-.intro-page {
+*/ .intro-page {
     position: sticky;
     z-index: 2;
 }
