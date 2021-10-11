@@ -21,7 +21,6 @@ body {
 * {
     margin: 0;
     scroll-behavior: smooth;
-    font-family: 'Khula', sans-serif;
 }
 
 div.container {
@@ -31,7 +30,7 @@ div.container {
     position: relative;
     background-color: var(--color-primary);
     background-repeat: no-repeat;
-    background-image: url(media/blossom.jpeg);
+    background-image: url(FrontPagePic/blossom.jpeg);
     background-position: center;
     background-size: cover;
     max-width: 1920px;
@@ -41,8 +40,6 @@ div.container {
 }
 
 div.Text__remove {
-    z-index: 2;
-    font-weight: bold;
     height: 100vh;
     width: 100vw;
     background-size: cover;
@@ -55,11 +52,10 @@ div.Text__remove {
 }
 
 div.Text__remove h1 {
-    z-index: 2;
     line-height: 74%;
     padding-top: 6%;
     font-family: 'Khula', 'sans-serif';
-    font-size: 300px;
+    font-size: 20rem;
     letter-spacing: -10px;
     position: absolute;
     max-height: 100vh;
@@ -78,7 +74,7 @@ div.Text__remove:hover {
     margin-top: 90vh;
     margin-left: 50%;
     margin-right: 50%;
-    background-image: url(media/Arrow.svg);
+    background-image: url(FrontPagePic/Arrow.svg);
     text-align: center;
     height: 30px;
     width: 30px;
@@ -110,55 +106,81 @@ header {
     justify-content: center;
     background-color: whitesmoke;
     color: rgb(30, 39, 79);
-    padding-top: 20px;
 }
 
 
 /*Navigation*/
 
-nav {
-    align-items: center;
-    color: white;
+.intro-page {
+    top: 0;
+    position: sticky;
+    z-index: 2;
+}
+
+.intro-page,
+main {
+    box-sizing: border-box;
+    padding: 0;
     background-color: whitesmoke;
 }
 
-nav ul {
-    margin-bottom: 20px;
+.second-header {
+    margin: 0;
+    width: 100vw;
+    background-color: white;
+    z-index: 2;
 }
 
-nav,
-nav ul {
+nav {
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    background-color: #9aa18759;
+    color: white;
+}
+
+nav h1 {
+    font-family: 'Playfair Display SC', serif;
+    padding-bottom: 5px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #232e6e;
+    transition: 0.25s ease-in-out;
+}
+
+.menu {
+    list-style: none;
+    width: 25vw;
     display: flex;
     justify-content: center;
-    text-decoration: none;
-}
-
-nav li {
-    display: inline;
-}
-
-nav li a {
-    text-decoration: none;
-    color: rgb(30, 39, 79);
-    padding: 5px;
-    transition: 00.25s ease-in-out;
-    font-family: 'Playfair Display', serif;
-}
-
-nav li a:hover {
-    color: whitesmoke;
-    border: 1px solid rgb(30, 39, 79);
-    border-radius: 5px;
-    background-color: rgb(30, 39, 79);
-}
-
-.intro-page {
-    box-sizing: border-box;
     padding: 0;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 0 30px 0 30px;
+    justify-content: space-between;
+}
+
+.menu li a {
+    font-family: 'Playfair Display', serif;
+    text-transform: none;
+    text-decoration: none;
+    color: #232e6eca;
+    padding: 5px;
+    transition: 0.25s ease-in-out;
+    font-size: 1.5rem;
+}
+
+.menu li a:hover {
+    background-color: #232e6e;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
 }
 
 
