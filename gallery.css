@@ -15,7 +15,7 @@ header{
 }
 
 nav{
-    height: 20vh;
+    height: 15vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -27,9 +27,11 @@ nav{
 }
 
 nav h1{
+    font-family: 'Playfair Display SC', serif;
+    padding-bottom: 5px;
     font-size: 2rem;
     text-transform: uppercase;
-    color: #00957aa2;
+    color: #232e6e;
     transition: 0.25s ease-in-out;
 }
 
@@ -48,14 +50,15 @@ nav h1{
 }
 
 .menu li a{
+    font-family: 'Playfair Display', serif;
     text-decoration: none;
-    color: #00957aa2;
+    color: #232e6eca;
     padding: 5px;
     transition: 0.25s ease-in-out;
 }
 
 .menu li a:hover{
-    background-color: #00957aa2;
+    background-color:#232e6e;
     padding: 5px;
     border-radius: 5px;
     color: white;

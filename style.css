@@ -91,7 +91,7 @@ section{
 }
 
 nav{
-    height: 20vh;
+    height: 15vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -102,9 +102,11 @@ nav{
     color: white;
 }
 nav h1{
+    font-family: 'Playfair Display SC', serif;
+    padding-bottom: 5px;
     font-size: 2rem;
     text-transform: uppercase;
-    color: #00957aa2;
+    color: #232e6e;
     transition: 0.25s ease-in-out;
 }
 .menu{
@@ -122,14 +124,15 @@ nav h1{
 }
 
 .menu li a{
+    font-family: 'Playfair Display', serif;
     text-decoration: none;
-    color: #00957aa2;
+    color: #232e6eca;
     padding: 5px;
     transition: 0.25s ease-in-out;
 }
 
 .menu li a:hover{
-    background-color: #00957aa2;
+    background-color:#232e6e;
     padding: 5px;
     border-radius: 5px;
     color: white;
@@ -137,6 +140,20 @@ nav h1{
 
 main{
     position: relative;
+}
+
+.intro-page h2, p{
+    padding: 20px;
+    color: rgb(30,39,79);
+}
+.intro-page p{
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    line-height: 1.6;
+}
+.intro-page p{
+    font-size: 35px;
+    font-family: 'Playfair Display SC', serif;
 }
 
 .section-container1{
@@ -149,43 +166,53 @@ main{
     padding: 10px;
 }
 
-.intro-page h2, p{
-    font-size: 35px;
-    padding: 20px;
-    color: rgb(30,39,79);
-    font-family: 'Playfair Display SC', serif;
-    font-size: 20px;
-    padding: 20px;
-    font-family: 'Playfair Display', serif;
-    line-height: 1.6;
-    color: rgb(30,39,79);
-}
-
 .text-box1{
     margin: 100px;
-    background-color: whitesmoke;
     border: thick double rgb(30,39,79);
-    padding: 40px;
-    column-count: 3;
-    flex-direction: row-reverse;
 }
 .text-box2{
+    margin: 40px;
+}
+.text-box1, .text-box2{
+    background-color: whitesmoke;
     padding: 40px;
     column-count: 3;
     flex-direction: row-reverse;
 }
 
-.info-box{
+.info-box1, .info-box2{
     background-color: rgb(233, 232, 232);
 }
 
-.textogbilde{
-    background-color: wheat;
-    border: 2px solid salmon;
+.info-box2{
+    width: 400px;
+}
+
+.funfact-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 50px;
+}
+
+.funfact1, .funfact2, .funfact3{
+    background-color: rgb(233, 232, 232);
+    border: 5px solid rgb(233, 232, 232);
     width: 30%;
     height: auto;
     margin: 30px 20px;
-    align-content: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    min-width: 280px;
+    padding: 10px;
+}
+
+.box-h{
+    padding: 10px 10px;
+}
+
+.box-p{
+    padding: 5px 10px;
 }
 
 .fade-in{
@@ -232,7 +259,16 @@ main{
 .tre, .cafe, .original{
     height: 100vh;
     width: 100vw;
+}
 
+.hatt-img{
+    width: 400px;
+    height: 300px;
+}
+
+.funfact-container img{
+    width: 100%;
+    height: 400px;
 }
 /*
 
