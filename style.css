@@ -70,16 +70,7 @@ main{
     position: relative;
 }
 
-#section-container1{
-    position: absolute;
-    top: 900px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 10px;
-}
-
+/*Overskrifter og paragrafer*/
 h2{
     font-size: 35px;
     font-family: 'Playfair Display SC', serif;
@@ -97,27 +88,33 @@ h2, p{
 }
 
 
-#text-box1{
+/*Tekstbokser*/
+
+.section-container1{
+    position: absolute;
+    top: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.text-box1{
     margin: 100px;
     border: thick double rgb(30,39,79);
 }
 
-#text-box2, #text-box3{
+.text-box2 {
     margin: 40px;
 }
 
-#text-box1, #text-box2, #text-box3{
+.text-box1, .text-box2{
     background-color: whitesmoke;
     padding: 40px;
     column-count: 3;
     flex-direction: row-reverse;
 }
-
-#hatt-img{
-    width: 400px;
-    height: 300px;
-}
-
 
 .info-box1, .info-box2{
     background-color: rgb(233, 232, 232);
@@ -127,7 +124,14 @@ h2, p{
     width: 400px;
 }
 
-.funfact1{
+.funfact-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin: 50px;
+}
+
+.funfact1, .funfact2, .funfact3{
     background-color: rgb(233, 232, 232);
     border: 5px solid rgb(233, 232, 232);
     width: 30%;
@@ -139,33 +143,20 @@ h2, p{
     padding: 10px;
 }
 
-#funfact-container img{
-    width: 100%;
-    height: 400px;
-}
-
-#box-h{
+.box-h{
     padding: 10px 10px;
 }
 
-#box-p{
+.box-p{
     padding: 5px 10px;
 }
 
-#funfact-container{
-    display: flex;
-    justify-content: center;
-    flex-direction: row-reverse;
-    margin: 50px;
-}
-
-
 /*Animasjoner*/
-#fade-in{
+.fade-in{
     position: relative;
 }
 
-#fade-in img{
+.fade-in img{
     position: absolute;
     animation-name: fade;
     animation-timing-function: ease-in-out;
@@ -203,11 +194,23 @@ h2, p{
     
 }
 
+/*Bilder*/
 .tre, .cafe, .original{
     height: 100vh;
     width: 100vw;
 
 }
+
+.hatt-img{
+    width: 400px;
+    height: 300px;
+}
+
+.funfact-container img{
+    width: 100%;
+    height: 400px;
+}
+
 
 
 
